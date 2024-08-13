@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'S-Core Dream', sans-serif;
+    background: #EBEDF3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93px;
+    z-index: 1000;
+    border: none;
+}
+
+.content-container {
+    width: 100%; /* 화면을 거의 가득 채움 */
+    max-width: 2500px; /* 최대 폭 설정 */
+    background: white;
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-top: 120px;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.post-info {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-status {
+    margin-left: 20px;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+.post-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.post-dates {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-createAt {
+    margin-right: 20px;
+}
+
+.apply-button {
+    font-family: 'S-Core Dream', sans-serif;
+    padding: 15px 30px;
+    background-color: white;
+    border: 3px solid #8142f7;
+    color: #8142f7;
+    font-size: 42px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.apply-button:hover {
+    background-color: #8142f7;
+    color: white;
+}
+
+.post-body {
+    padding: 0 0 0 0;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.post-conditions {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.post-metadata {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.condition-item, .metadata-item {
+    display: flex;
+    align-items: center;
+}
+
+.condition-label, .metadata-label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #6F00FF;
+    min-width: 150px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.condition-value, .metadata-value {
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin: 40px 0;
+}
+
+.post-description {
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+    white-space: pre-line;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.apply-button, .edit-button, .delete-button {
+    font-family: 'S-Core Dream', sans-serif;
+    padding: 15px 30px;
+    background-color: white;
+    border: 3px solid #8142f7;
+    color: #8142f7;
+    font-size: 42px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.apply-button:hover, .edit-button:hover, .delete-button:hover {
+    background-color: #8142f7;
+    color: white;
+}
+
+.edit-button {
+    border-color: #6F00FF;
+    color: #6F00FF;
+}
+
+.edit-button:hover {
+    background-color: #6F00FF;
+}
+
+.delete-button {
+    border-color: #FF4B4B;
+    color: #FF4B4B;
+}
+
+.delete-button:hover {
+    background-color: #FF4B4B;
+    color: white;
+}

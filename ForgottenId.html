@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="../static/css/Forgotten.css">
+    <script src="../static/js/ForgottenId.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <img src="../static/img/logo.png" class="logoicon" />
+    <div class="tab-container">
+        <div class="tab active">아이디 찾기</div>
+        <div class="tab inactive" onclick="location.href='ForgottenPw.html'">비밀번호 찾기</div>
+    </div>
+    <div class="input-container">
+        <div class="input-group">
+            <div class="input-wrapper">
+                <input type="text" class="input-field" id="name" />
+                <div class="input-label">이름</div>
+                <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="input-wrapper email-group">
+                <div class="email-wrapper">
+                    <form id="verificationForm" action="/sendIdVerificationEmail" method="post">
+                        <input type="email" class="input-field" id="email" name="email" required />
+                        <button type="submit" class="verification-button">받기</button>
+                    </form>
+                </div>
+                <div class="input-label">이메일</div>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="input-wrapper">
+                <form id="codeVerificationForm" action="/verifyIdCode" method="post">
+                    <input type="text" class="input-field" id="code" name="code" required />
+                    <div class="input-label">인증코드</div>
+                    <div class="error-message" id="codeError"></div>
+                    <button type="submit" class="button">확인</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

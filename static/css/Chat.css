@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-Core Dream', sans-serif;
+    background: #EBEDF3;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    height: 900px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F8F9FD;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chat-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-username-large {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.chat-details {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.profile-button {
+    font-family: 'S-core Dream', sans-serif;
+    font-size: 17px;
+    background: #6F00FF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px 20px 20px;
+    overflow-y: auto;
+}
+
+.message-bubble-right, .message-bubble-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.message-bubble-right {
+    align-self: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.message-bubble-left {
+    align-self: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.message-text {
+    padding: 10px 20px;
+    background: #8E37FF;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.message-bubble-left .message-text {
+    background: #DADADA;
+    color: #000;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #AFB8CF;
+    margin-top: 5px;
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+    font-family: 'S-core Dream', 'san-serif';
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.send-button {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/send.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Popup CSS */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popup-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin: 5px 0;
+}
+
+.popup-close {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.popup-close:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-Core Dream', sans-serif;
+    background: #EBEDF3;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 93px);
+    margin-top: 100px;
+}
+
+.sidebar {
+    margin-top: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 120%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    background: #c5aef0;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    transform: translateX(-15%);
+}
+
+.menu-item.active {
+    background: #8142f7;
+    width: 130%;
+    transform: translateX(-3%);
+}
+
+.icon {
+    width: 300px;
+    height: 300px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: 90px;
+}
+
+.title {
+    font-size: 40px; 
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.title-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.team-name-input {
+    font-family: 'S-core Dream', sans-serif;
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.team-create-button {
+    font-family: 'S-core Dream', sans-serif;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6F00FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left:50px;
+}
+
+.save-button:hover, .status-save-button:hover, .team-create-button:hover {
+    background-color: #5500cc;
+}
+
+.accordion {
+    background-color: #6F00FF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.accordion.active:after {
+    content: "\2212"; 
+}
+
+.panel {
+    padding: 0;
+    background-color: transparent; 
+    display: none;
+    overflow: hidden;
+    width: 200px; 
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel li {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.panel li:hover {
+    background-color: #f2f2f2;
+}
+
+.recruit-table-container {
+    margin-bottom: 150px; /* 테이블 간의 간격 */
+}
+
+.status-table-container {
+    width: 80%;
+    max-width: 1200px; 
+    position: relative;
+}
+
+.status-table {
+    width: 100%; 
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.status-table th, .status-table td {
+    padding: 16px; 
+    text-align: center;
+    font-size: 18px; 
+}
+
+.status-table th {
+    background: #6F00FF;
+    color: white;
+    font-weight: 600;
+}
+
+.status-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.status-table tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.status-table td {
+    color: #333;
+}
+
+.status-table select {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6F00FF;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    transition: background-color 0.3s;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.status-table select:hover {
+    background-color: #5500cc;
+}
+
+.status-table .profile-btn {
+    font-family: 'S-core Dream', sans-serif;
+    background: #6F00FF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.status-table .profile-btn:hover {
+    background: #5500cc;
+}
+
+.status-table .chat-btn {
+    font-family: 'S-core Dream', 'san-serif';
+    background: #28a745;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    justify-items: center;
+}
+
+.status-table .chat-btn:hover {
+    background: #218838;
+}
+
+/* 팝업 스타일 */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.popup-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup-content {
+    margin-bottom: 20px;
+}
+
+.popup-input {
+    width: 300px;
+    height: 30px;
+    font-family: 'S-core Dream', sans-serif;
+    margin-bottom: 20px;
+}
+
+.popup-close, .submit-team {
+    font-family: 'S-Core Dream', sans-serif;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6F00FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.popup-close:hover, .submit-team:hover {
+    background-color: #5500cc;
+}

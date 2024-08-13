@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'S-Core Dream', sans-serif;
+    background: #EBEDF3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: calc(100% - 93px);
+    margin-top: 100px;
+}
+
+.sidebar {
+    margin-top: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 120%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    background: #c5aef0;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    transform: translateX(-15%);
+}
+
+.menu-item.active {
+    background: #8142f7;
+    width: 130%;
+    transform: translateX(-3%);
+}
+
+#posts-container {
+    margin-top: -50px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(13%, -5%); /* 오른쪽으로 10%, 위쪽으로 10% 이동 */
+}
+
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.header h1 {
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.post {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 90%;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.post::before,
+.post::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 2px;
+    background: #000000;
+}
+
+.post::before {
+    top: 15px;
+    left: 20px;
+}
+
+.post::after {
+    left: 20px;
+    bottom: 15px;
+}
+
+.post-content {
+    max-width: 70%;
+}
+
+.post-content h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+}
+
+.post-content p {
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    box-orient: vertical;
+    line-clamp: 3;
+    max-height: calc(1.5em * 3);
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border-left: 1px solid #000;
+    padding-left: 20px;
+}
+
+.post-footer span {
+    margin-bottom: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 40px;
+    left: 52%;
+    transform: translateX(-25%);
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pagination a {
+    color: #9E9E9E;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.pagination a.page {
+    background: #CCCCCC;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pagination a.page.active {
+    background: #925FF0;
+}
+
+.pagination a.prev,
+.pagination a.next {
+    color: #9E9E9E;
+}

@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'S-Core Dream', sans-serif;
+    background: #EBEDF3;
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea {
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 93px);
+    margin-top: 100px;
+}
+
+.sidebar {
+    margin-top: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 120%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    background: #c5aef0;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    transform: translateX(-15%);
+}
+
+.menu-item.active {
+    background: #8142f7;
+    width: 130%;
+    transform: translateX(-3%);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 130px;
+    flex: 1;
+    padding: 50px;
+    margin-top: -70px;
+}
+
+.basic-info, .profile {
+    background: white;
+    width: 500px;
+    padding: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background: #9747FF;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 60px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.form-group.inline-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-group.inline-group div {
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="file"], textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: 3px solid #9747FF;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form-group input[type="text"] {
+    flex: 1;
+}
+
+.form-group span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.submit-btn {
+    background: #9747FF;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'S-core Dream', 'san-serif';
+}

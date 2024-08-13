@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'S-Core Dream', sans-serif;
+    background: #040000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.text-common {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.title-text {
+    position: absolute;
+    top: 13%;
+    left: 34%;
+    
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px; /* 팀 프로필 버튼 사이의 간격 */
+}
+
+.profile-box {
+    padding: 50px 71px;
+    border-radius: 62px;
+    border: 5px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-box:hover {
+    background-color: white;
+    color: black; /* 글자색을 검은색으로 변경 */
+}
+
+.profile-box:hover .text-common {
+    color: black; /* 버튼 전체에 hover할 때 글씨가 검은색으로 변경되도록 설정 */
+}
+
+.profile-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

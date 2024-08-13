@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 800px;
+    box-shadow: 0px 8px 5px rgb(139, 139, 139, 3);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar img {
+    width: 163px;
+    height: 75px;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.team-info {
+    color: white;
+    font-size: 24px;
+    font-family: 'S-Core Dream', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.members {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 20px 20px;
+    border: 2px solid white;
+}
+
+.navbar-item.community {
+    background: transparent;
+}
+
+.navbar-item div {
+    color: white;
+    font-size: 30px;
+    font-family: 'S-Core Dream', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.arrow-icon {
+    width: 15px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon img {
+    width: 40px;
+    height: 40px;
+    border: none;
+}

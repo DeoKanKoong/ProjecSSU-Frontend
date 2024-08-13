@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+    url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 800px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar img {
+    width: 168px;
+    height: 71px;
+    cursor: pointer;
+}
+
+.navbar-item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+.navbar-item div {
+    color: black;
+    font-size: 24px;
+    font-family: 'S-Core Dream', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.navbar-item.project {
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background: #6F00FF;
+    border-radius: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+.navbar-item.project div {
+    color: white;
+    font-size: 23px;
+    font-family: 'S-Core Dream', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon img {
+    width: 40px; /* 원하는 너비로 설정 */
+    height: 40px; /* 원하는 높이로 설정 */
+}

@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-Core Dream', sans-serif;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 662px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.logoicon {
+    width: 200px;
+    height: 120px;
+}
+
+.tab-container {
+    width: 530px;
+    height: 43px;
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid #C6C6C6;
+}
+
+.tab {
+    width: 50%;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #7F1DFF;
+    border-bottom: 2px solid #925FF0;
+}
+
+.tab.inactive {
+    color: #8F8F8F;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.input-group {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    height: 48px;
+    background: white;
+    border-radius: 10px;
+    border: 3px #9747FF solid;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: black;
+    box-sizing: border-box;
+}
+
+.email-wrapper {
+    position: relative;
+}
+
+.email-wrapper .input-field {
+    padding-right: 80px; /* 버튼을 위한 패딩 추가 */
+}
+
+.verification-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 28px;
+    background: #925FF0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.input-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: white;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    background: #9747FF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.link {
+    color: #7F1DFF;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/gh/webfontworld/SCoreDream/SCoreDream5.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-Core Dream', sans-serif;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; /* 스크롤 활성화 */
+}
+
+.container {
+    width: 494px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 184px;
+    height: 85px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 339px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    height: 48px;
+    background: white;
+    border-radius: 10px;
+    border: 3px #9747FF solid;
+    padding: 0 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.input-label {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    background: white;
+    padding: 0 5px;
+    color: black;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.verification-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #925FF0;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.duplicate-check {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #925FF0;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    gap: 14px;
+}
+
+.agreement-box {
+    width: 339px;
+    border: 2px #925FF0 solid;
+    margin-top: 20px;
+}
+
+.agreement-header {
+    padding: 10px 12px;
+    border-bottom: 2px #925FF0 solid;
+}
+
+.agreement-content {
+    padding: 10px 12px;
+    background: rgba(217, 217, 217, 0.40);
+}
+
+.agreement-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    color: #292929;
+    font-size: 14px;
+}
+
+.agreement-item:first-child {
+    font-size: 14px;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    border: 1.38px #925FF0 solid;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.submit-button, .confirm-button {
+    width: 339px;
+    padding: 15px 0;
+    background: #925FF0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.confirm-button {
+    width: 411px;
+    height: 52px;
+    padding: 10px;
+    background: #925FF0;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.confirm-button:hover {
+    background: #7740D8;
+}
+
+.back-button {
+    width: 411px;
+    height: 52px;
+    padding: 10px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background: black;
+    color: white;
+}
+
+.welcome-text {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin: 20px -10px;
+}
+
+.intro-box {
+    width: 410px;
+    height: 223px;
+    background: white;
+    border-radius: 10px;
+    border: 3px #9747FF solid;
+    position: relative;
+    margin-top: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.intro-label {
+    width: 75px;
+    height: 25px;
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    background: white;
+    padding: 0 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.intro-box textarea {
+    height: 160px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.intro-box textarea:focus {
+    outline: none;
+}
+
+.portfolio-section {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.portfolio-link {
+    width: 410px;
+    height: 57px;
+    background: white;
+    border-radius: 10px;
+    border: 3px #9747FF solid;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.portfolio-label {
+    width: 118px;
+    height: 25px;
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    background: white;
+    padding: 0 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.portfolio-link input {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.portfolio-link input:focus {
+    outline: none;
+}
+
+.action-button {
+    width: 30px;
+    height: 30px;
+    background: #925FF0;
+    border-radius: 50%;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover {
+    background: #7740D8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.action-button::before,
+.action-button::after {
+    content: '';
+    position: absolute;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.action-button::before {
+    width: 14px;
+    height: 2px;
+}
+
+.action-button.add::after {
+    width: 2px;
+    height: 14px;
+}

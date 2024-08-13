@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상단 바</title>
+    <link rel="stylesheet" href="../static/css/navbar.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-left">
+        <img src="../static/img/logo.png" onclick="navigateTo('MainCommunity.html')" />
+        <div class="navbar-item" onclick="navigateTo('MyPage.html')">
+            <div>마이페이지</div>
+        </div>
+        <div class="navbar-item" onclick="navigateTo('TeamRecruitBoard.html')">
+            <div>팀 모집 게시판</div>
+        </div>
+        <div class="navbar-item" onclick="navigateTo('Post.html')">
+            <div>글쓰기</div>
+        </div>
+    </div>
+    <div class="navbar-item project" onclick="navigateTo('TeamSelect.html')">
+        <div>프로젝트</div>
+        <div class="arrow-icon">
+            <img src="../static/img/arrow (2).png" alt="Project Icon">
+        </div>
+    </div>
+</div>
+
+<script>
+function navigateTo(url) {
+    window.parent.location.href = url;
+}
+</script>
+</body>
+</html>

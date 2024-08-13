@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅 페이지</title>
+    <link rel="stylesheet" href="../static/css/Chat.css">
+    <script defer src="../static/js/Chat.js"></script>
+</head>
+<body onload="connectWebSocket()">
+    <!-- Navigation bar loaded via iframe -->
+    <iframe src="navbar.html" class="navbar" frameborder="0"></iframe>
+
+    <div class="container">
+        <div class="chat-box">
+            <!-- Chat Header (상단 부분) -->
+            <div class="chat-header" id="chatHeader">
+                <div class="chat-title">
+                    <div class="chat-username-large" id="chatUsername">상대방 이름</div>
+                    <div class="chat-details" id="chatDetails">상세 정보</div>
+                </div>
+            </div>
+
+            <!-- Chat Content -->
+            <div class="chat-content" id="chatbox">
+                <!-- 채팅 내용이 여기에 동적으로 로드됩니다. -->
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="messageInput" placeholder="메시지를 입력하세요">
+                <button class="send-button" onclick="sendMessage()"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 프로필 팝업 -->
+    <div class="popup" id="profilePopup">
+        <div class="popup-header">지원자 프로필</div>
+        <div class="popup-content" id="profileDetails">
+            <!-- 프로필 데이터가 여기에 표시됩니다 -->
+        </div>
+        <button class="popup-close" onclick="closePopup()">닫기</button>
+    </div>
+</body>
+</html>

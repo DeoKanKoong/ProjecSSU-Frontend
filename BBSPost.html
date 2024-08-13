@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 상세 페이지</title>
+    <link rel="stylesheet" href="../static/css/BBSPost.css">
+    <script src="../static/js/BBSPost.js" defer></script>
+</head>
+<body>
+    <iframe src="navbar.html" frameborder="0" class="navbar"></iframe>
+    <div class="content-container">
+        <div class="post-header">
+            <div class="post-info">
+                <span id="post-author"></span>
+                <span id="post-status" class="post-status">모집 중</span>
+            </div>
+            <div class="post-title-wrapper">
+                <h1 id="post-title" class="post-title"></h1>
+                <div class="button-container"> 
+                    <button class="apply-button" id="action-button">지원하기</button>
+                    <button class="edit-button" id="edit-button" style="display: none;">수정</button> 
+                    <button class="delete-button" id="delete-button" style="display: none;">삭제</button> 
+                </div>
+            </div>
+            <div class="post-dates">
+                <span id="post-createAt" class="post-createAt"></span>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="post-body">
+            <div class="post-conditions">
+                <div class="condition-item">
+                    <span class="condition-label">분야</span>
+                    <span id="post-field" class="condition-value"></span>
+                </div>
+                <div class="condition-item">
+                    <span class="condition-label">우대사항</span>
+                    <span id="post-preferential" class="condition-value"></span>
+                </div>
+            </div>
+            <div class="post-metadata">
+                <div class="metadata-item">
+                    <span class="metadata-label">지원 마감일</span>
+                    <span id="post-duration" class="metadata-value"></span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">모집 인원</span>
+                    <span id="post-numberOfPeople" class="metadata-value"></span>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div id="post-content" class="post-description"></div>
+    </div>
+</body>
+</html>
