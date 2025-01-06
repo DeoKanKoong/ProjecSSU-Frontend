@@ -45,7 +45,7 @@ function validateForm() {
             sessionStorage.setItem('id', data); 
             sessionStorage.setItem('username', "asdf");
             if (data) {
-                window.location.href = 'MainCommunity.html'; // 로그인 성공 시 리다이렉트
+                window.location.href = 'index.html'; // 로그인 성공 시 리다이렉트
             } else {
                 if (data.error === 'invalid_credentials') {
                     studentIdError.textContent = '아이디 또는 비밀번호가 틀렸습니다.';
